@@ -8,7 +8,7 @@
 #import "BHI_Utility.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
 #import "GTMBase64.h"
 
 //引入IOS自带密码库

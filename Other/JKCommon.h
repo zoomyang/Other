@@ -8,7 +8,7 @@
 
 #import "Exp.h"
 
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
 
 ///////////////////////////
 #import "BHI_Utility.h"
@@ -38,7 +38,7 @@
 #define os_success_status 200  //网络请求成功状态码
 
 #pragma mark -
-#define App_Delegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+//#define App_Delegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
 #define bself(a) jkbself(a)
 
 
