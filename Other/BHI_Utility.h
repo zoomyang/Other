@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import <UIKit/UIKit.h>
-#import "JKCommon.h"
+
 
 #define IS_IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? YES : NO
 
