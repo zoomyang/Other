@@ -292,6 +292,13 @@
     return [self dateByAddingDays: (dDays * -1)];
 }
 
+- (NSDate *) dateByAddingSeconds: (NSInteger) Seconds
+{
+    NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + Seconds;
+    NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
+    return newDate;
+}
+
 #pragma mark - Relative Dates
 + (NSDate *) dateWithDaysFromNow: (NSInteger) days
 {

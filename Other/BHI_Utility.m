@@ -363,11 +363,9 @@ static NSDateFormatter* outputFormatter;
 
 -(NSDate*)getDateWithAddSeconds:(long)seconds
 {
-	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSLocaleCalendar];
-	NSDateComponents* dc = [[NSDateComponents alloc] init];
-	[dc setSecond:seconds];
-	NSDate *date=[gregorian dateByAddingComponents:dc toDate:self options:0];
-	return date;
+    NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + Seconds;
+    NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
+    return newDate;
 }
 
 

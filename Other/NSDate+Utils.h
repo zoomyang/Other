@@ -56,6 +56,7 @@
 #pragma mark - Date adjust
 - (NSDate *) dateByAddingDays: (NSInteger) dDays;
 - (NSDate *) dateBySubtractingDays: (NSInteger) dDays;
+- (NSDate *) dateByAddingSeconds: (NSInteger) Seconds;
 
 #pragma mark - Relative dates from the date
 + (NSDate *) dateTomorrow;
