@@ -363,7 +363,7 @@ static NSDateFormatter* outputFormatter;
 
 -(NSDate*)getDateWithAddSeconds:(long)seconds
 {
-    NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + Seconds;
+    NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + seconds;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
